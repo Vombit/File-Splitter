@@ -42,7 +42,7 @@ int main() {
         bytes = fread(pool, sizeof(char), part_size, file);
 
 
-        temp_file = fopen(part_file, "w");
+        temp_file = fopen(part_file, "wb");
 
        
         fwrite(pool, sizeof(char), bytes, temp_file);

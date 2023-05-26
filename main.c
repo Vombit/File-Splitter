@@ -5,7 +5,7 @@ int main() {
     system("chcp 1251");
     system("cls");
     FILE* file = NULL, * temp_file = NULL;
-    char filename[] = "file.txt"; //название файла
+    char filename[] = "file.txt";
     size_t length;
     file = fopen(filename, "rb");
 
@@ -14,7 +14,7 @@ int main() {
     printf("Размер файла: %d\n", length);
     fclose(file);
 
-    int part_count = 5; // кол-во частей деления файла
+    int part_count = 5;
     size_t part_size;
     part_size = length / part_count;
     printf("Размер части файла: %d\n", part_size);
